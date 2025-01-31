@@ -1,0 +1,58 @@
+num1=10
+num2=5
+sum=num1+num2
+print(sum)
+dif=num1-num2
+print(dif)
+mul=num1*num2
+print(mul)
+div=num1/num2
+print(div)
+rem=num1%num2
+print(rem)
+pow=5**2
+print(pow)
+divfloor=num1//num2
+print(divfloor)
+
+
+print(" "*1," "*1,sep="    ",end="*\n")
+print(" "*3," "*6, sep="*",end="*\n") # prints the string "*" repeated 5 times
+print(" "*2," "*8, sep="*",end="*\n")
+print(" "*2," "*8, sep="*",end="*\n")
+print(" "*3," "*6, sep="*",end="*\n")
+print(" "*1," "*1,sep="    ",end="*\n")
+
+
+# Identity operator
+x=["maruti","BMW"]
+y=["maruti","BMW"]
+z=x
+print(z is y)
+print(x is not y)
+print(x is z)
+
+# membership operator
+x=["maruti","BMW"]
+y= ["abc"]
+print("abc" in  y)
+print("b" not in y)
+
+print("    *")
+print("   * *")
+print("  *   *")
+print(" *     *")
+print("***   ***")
+print("  *   *")
+print("  *   *")
+print("  *****")
+("\n")
+
+print("       *")
+print("      **")
+print("     ***")
+print("    ****")
+print("   *****")
+print(" *******")
+
+ 
