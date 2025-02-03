@@ -43,7 +43,3 @@ print("Sum of num1 and num2 is:", num1+num2)
 num1=+10.5
 num2=+25.5
 print("Multiplication of num1 and num2 is:", num1*num2)
-
-'''. Write a program to print the ASCII Value of a character variable '''
-char = 'A'
-print("ASCII value of", char, "is:", ord(char))
