@@ -1,0 +1,49 @@
+''''Write a program to print your name, age, and course.
+ All the details should be stored in separate variables and then print '''
+
+name= "Diksha Patidar"
+print("Name:",name)
+age=21
+print("Age:",age)
+course= "Python"
+print("Course:",course)
+("\n")
+
+'''2. Write a program to print the name, age, and course details of three students.
+ All the details should be stored in separate variables and then print '''
+# Student 1
+name1 = "Diksha Patidar"
+print("Name:", name1)
+age1 = 21
+print("Age:", age1)
+course1 = "Python"
+print("Course:", course1)
+# Student 2
+name2 = "Anjali Patidar"
+print("Name:",name2)
+age2 = 22
+print("Age:",age2)
+course2 = "Java"
+print("Course:",course2)
+# Student 3
+name3 = "Rahul Verma"
+print("Name:",name3)
+age3 = 23
+print("Age:",age3)
+course3 = "C++"
+print("Course:",course3)
+
+
+'''Write a program to sum 2 integer variable values without using a third variable '''
+num1=+10
+num2=+20
+print("Sum of num1 and num2 is:", num1+num2)
+
+'''4. Write a program to multiply 2 floating points '''
+num1=+10.5
+num2=+25.5
+print("Multiplication of num1 and num2 is:", num1*num2)
+
+'''. Write a program to print the ASCII Value of a character variable '''
+char = 'A'
+print("ASCII value of", char, "is:", ord(char))
