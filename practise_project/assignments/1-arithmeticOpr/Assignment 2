@@ -35,11 +35,15 @@ print("Course:",course3)
 
 
 '''Write a program to sum 2 integer variable values without using a third variable '''
-num1=+10
-num2=+20
+num1=10
+num2=20
 print("Sum of num1 and num2 is:", num1+num2)
 
 '''4. Write a program to multiply 2 floating points '''
-num1=+10.5
-num2=+25.5
+num1=10.5
+num2=25.5
 print("Multiplication of num1 and num2 is:", num1*num2)
+
+"""write a program to print ASCII value of a character"""
+n= 'A'
+print(ord(n))
