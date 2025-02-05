@@ -32,12 +32,16 @@ print(type (name))
 name=input("Enter your name:")
 print("Hello",str(name))
 
-#Add two numbers
+#Add two numbers // type casting
 '''sum1= input("Enter first no:")
 sum2= input("Enter second no:")
 print("sum of two no is:",int (sum1)+int(sum2))
+
+
 '''
 # sum two floating number
 sum1= input("Enter first no:")
 sum2= input("Enter Second no:")
 print("sum of two floating no:",float(sum1)+float(sum2))
+
+
