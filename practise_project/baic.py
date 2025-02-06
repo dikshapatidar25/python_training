@@ -94,4 +94,10 @@ else:
     print("num3 is largest")
 
 
+num1=int(input("Enter the no1:"))
+num2=int(input("Enter the no2:"))
+num3=int(input("Enter the no3:"))
+print(max(num1,num2,num3,))
+print(min(num1,num2,num3))
+
 
