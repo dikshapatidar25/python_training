@@ -59,3 +59,39 @@ var=0
 print(var==0)
 var=1
 print(var==0)
+
+# Control flow statement
+'''
+num1=int(input("Enter the no1:"))
+num2=int(input("Enter the no2:"))
+if num1>num2:larger_number=num1
+else:larger_number=num2
+print("The larger number is:", larger_number)
+'''
+
+# if-else statement
+'''
+num1=int(input("Enter the no1:"))
+num2=int(input("Enter the no2:"))
+num3=int(input("Enter the no3:"))
+largest_number= num1
+if num2 >= largest_number:
+    largest_number= num2
+if num3 >=largest_number:
+    largest_number= num3 
+print("The largest number is:",largest_number)
+'''
+
+#elif statement
+num1=int(input("Enter the no1:"))
+num2=int(input("Enter the no2:"))
+num3=int(input("Enter the no3:"))
+if num1>num2:
+        print("num1 is largest:")
+elif num2>num3:
+        print("num2 is largest:")
+else:
+    print("num3 is largest")
+
+
+
