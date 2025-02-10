@@ -82,6 +82,7 @@ if num3 >=largest_number:
 print("The largest number is:",largest_number)
 '''
 
+'''
 #elif statement
 num1=int(input("Enter the no1:"))
 num2=int(input("Enter the no2:"))
@@ -94,10 +95,39 @@ else:
     print("num3 is largest")
 
 
+# max min function
 num1=int(input("Enter the no1:"))
 num2=int(input("Enter the no2:"))
 num3=int(input("Enter the no3:"))
 print(max(num1,num2,num3,))
 print(min(num1,num2,num3))
+'''
+'''
+#practise question1
+a=(input("Enter the plant:"))
+
+if a=="Spathiphyllum":
+    print("Yes- Spathiphyllim is the best plant ever")
+elif a=="spathiphyllum":
+    print("No , I want a big Spathiphyllum!")
+else:
+    print("No! Spathiphyllum, not ",a)
+    '''
+    
+  #practise question2
+income=float(input("Enter the income:"))
+if income<=85528 :
+    Tax= 18*income/100
+    Tax-=556.2
+else:
+    Tax= ((32*(income-85528))/100)
+    Tax+=14839.2
+# Result
+if Tax< 0:
+    print("Tax=0")
+else:
+    print("Tax=",Tax)
+
+
 
 
