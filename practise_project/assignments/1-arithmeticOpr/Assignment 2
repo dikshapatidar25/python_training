@@ -63,7 +63,7 @@ else:
     
     
   # practise question2
-  '''
+'''
 income=float(input("Enter the income:"))
 if income<=85528 :
     Tax= 18*income/100
@@ -77,3 +77,19 @@ if Tax< 0:
 else:
     print("Tax=",Tax)
     '''
+
+# practice question3 gregorian calennder
+
+year = int(input("Enter the year: "))
+
+if year < 1582:
+    print("Not, the Gregorian calendar period")
+else:
+    if year % 4 != 0:
+        print(" It is a common year")
+    elif year % 100 != 0:
+        print(" It is a leap year")
+    elif year % 400 != 0:
+        print("Common year")
+    else:
+        print("Leap year")
