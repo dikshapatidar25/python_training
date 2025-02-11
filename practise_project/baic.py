@@ -103,31 +103,32 @@ print(max(num1,num2,num3,))
 print(min(num1,num2,num3))
 '''
 '''
-#practise question1
-a=(input("Enter the plant:"))
+# while loop
+while True:
+    print("I am stuck in a loop")
+'''
+'''
+    # store the current largest number here.
+largest_number = -999999999
+number= int(input("Enter a number or type -1 to stop: "))
 
-if a=="Spathiphyllum":
-    print("Yes- Spathiphyllim is the best plant ever")
-elif a=="spathiphyllum":
-    print("No , I want a big Spathiphyllum!")
-else:
-    print("No! Spathiphyllum, not ",a)
-    '''
-    
-  #practise question2
-income=float(input("Enter the income:"))
-if income<=85528 :
-    Tax= 18*income/100
-    Tax-=556.2
-else:
-    Tax= ((32*(income-85528))/100)
-    Tax+=14839.2
-# Result
-if Tax< 0:
-    print("Tax=0")
-else:
-    print("Tax=",Tax)
+while number != -1:
+    if number > largest_number:
+        largest_number = number
+    number = int(input("Enter a number or type -1 to stop: "))
+print("The largest number is:", largest_number)
+'''
 
-
+number=int(input( "Please enter the number,0 to exist:" ))
+even=0
+odd=0
+while number != 0:
+    if number % 2==0:
+        even += 1
+    else:
+        odd+=1
+    number=int(input("Please enter the number,0 to exist:"))
+print("even number",even)
+print("odd number",odd)
 
 
