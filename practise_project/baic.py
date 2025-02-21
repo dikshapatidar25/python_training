@@ -109,8 +109,10 @@ while True:
 '''
 
 
+
+ # store the current largest number here.
+    
 '''
-    # store the current largest number here.
 largest_number = -999999999
 number= int(input("Enter a number or type -1 to stop: "))
 
@@ -135,4 +137,40 @@ while number != 0:
 print("even number",even)
 print("odd number",odd)
 '''
+
+#for loop
+counter = 0
+while counter < 100:
+    counter += 1
+    print(counter)
+
+# 1 number include
+for counter in range(100):
+    print("counter: ",counter+1)
+
+#2 number include
+for counter in range(2, 8):
+    print("The value of counter is currently", counter)
+
+
+#3 number include
+for counter in range(2, 8, 3):
+    print("The value of counter is currently", counter)
+
+#No output
+for counter in range(1, 1):
+    print("The value of counter is currently", counter)
+
+for counter in range(2, 1):
+    print("The value of counter is currently", counter)
+
+power = 1
+for expo in range(16):
+    print("2 to the power of", expo, "is", power)
+    power *= 2
+
+power = 1
+for expo in range(16):
+    print("3 to the power of", expo, "is", power)
+    power *= 3
 
