@@ -223,12 +223,15 @@ for letter in word:
     print( "Not eaten words",word_without_vowels)
 '''
 
+
+# guess output
 counter = 1
 while counter < 5:
     print(counter)
     counter += 1
 else:
     print("else:", counter)
+    
 
     counter = 5
 while counter < 5:
@@ -237,10 +240,14 @@ while counter < 5:
 else:
     print("else:", counter)
 
+
+
 for counter in range(5):
     print(counter)
 else:
     print("else:", counter)
+
+
 
 
 counter = 111
@@ -248,21 +255,17 @@ for counter in range(2, 1):
     print(counter)
 else:
     print("else:", counter)
+ 
+ 
+ #8
+def pyramid_height(blocks):
+    height = 0
+    while blocks >= height + 1:
+        height += 1
+        blocks -= height
+    return height
+
+blocks = int(input("Enter the number of blocks: "))
+print("The height of the pyramid is:", pyramid_height(blocks))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  

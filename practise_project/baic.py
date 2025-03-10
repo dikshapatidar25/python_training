@@ -174,3 +174,24 @@ for expo in range(16):
     print("3 to the power of", expo, "is", power)
     power *= 3
 
+
+ #break and countinue 
+#7
+print("The break instruction:")
+for counter in range(1, 6):
+        if counter == 3:
+            break
+        print("Inside the loop.", counter)
+print("Outside the loop.")
+
+#8
+print("\nThe continue instruction:")
+for counter in range(1, 6):
+    if counter == 3:
+        continue
+    print("Inside the loop.", counter)
+print("Outside the loop.")
+
+
+
+   
