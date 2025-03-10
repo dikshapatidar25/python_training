@@ -192,6 +192,14 @@ for counter in range(1, 6):
     print("Inside the loop.", counter)
 print("Outside the loop.")
 
+# GUESS OUTPUT
+print(var > 0)
+print(not (var <= 0))
 
+print(var != 0)
+print(not (var == 0))
 
+i = 1
+j = not not i
+print(i, j)
    
