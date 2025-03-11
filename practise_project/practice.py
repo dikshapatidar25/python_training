@@ -16,3 +16,6 @@ name= "Diksha"
 Profeion= "student"
 eperienced=0
 print("Hello,I Am ",name,". i am a ",Profeion," profeionaly. And i have around ",eperienced," year eperienced with it")
+
+var=0
+print(not(var<=0))
