@@ -137,7 +137,7 @@ while number != 0:
 print("even number",even)
 print("odd number",odd)
 '''
-
+'''
 #for loop
 counter = 0
 while counter < 100:
@@ -202,4 +202,17 @@ print(not (var == 0))
 i = 1
 j = not not i
 print(i, j)
-   
+'''
+
+# LIST 
+number= [10,5,7,2,1]
+number[0]=111
+print (number[0])
+print (number[1])
+print (number[2])
+print (number[3])
+print (number[4])
+del number[1]
+print(len(number))
+print(number)
+print(number[-4])
