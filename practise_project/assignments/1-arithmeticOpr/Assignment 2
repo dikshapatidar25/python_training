@@ -328,15 +328,71 @@ for i in range (1,50):
     print("\n") 
 
 '''
+#  Asingment all question
 #4 write a program to print first 10 natural number usign loop
 for i in range (1,11):
     print(i)
 
-#5 
-for i in range (1,11):
-    if i %2==0:
-        print(i)
+#5 Write a program to calculate the sum of all numbers from 1 to a given number - 15
+sum=0
+for i in range (1,16):
+    sum+=i
+    print(sum)
+print("/n")
 
+#6 Write a program to calculate the sum of all the odd numbers within the given range of 15
+sum=0
+for i in range (1,16):
+    if i % 2 != 0:
+        sum+=i
+        print(sum)
+print("/n")
+
+#7 Write a program to print a multiplication table of a given number 15
+for i in range (1,11):
+    print(15*i)
+
+#8 Write a program to display numbers from a list using a for the loop [1,2,4,6,88,125]
+for i in [1,2,4,6,88,125]:
+    print(i)
+
+#9 Write a program to count the total number of digits in a number 129475
+count=0
+for i in str(129475):
+    count+=1
+    print(count)
+
+#10 Write a program to check if the given string is a palindrome - madam
+#s="madam"
+#for i in s:
+ #   if s[i]!=s[len(s)-i-1]:
+  #      print("not a palindrome")
+ #       break
+
+#11 Write a program that accepts a word from the user and reverses it
+word=input("Enter a word:")
+for i in word:
+    print(word[len(word)-i-1])
+
+#12 Write a program to check if a given number is an Armstrong number 153
+def is_armstrong(num):
+    return num == sum(int(digit) ** len(str(num)) for digit in str(num))
+print(is_armstrong(153))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
