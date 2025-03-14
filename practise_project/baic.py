@@ -216,3 +216,4 @@ del number[1]
 print(len(number))
 print(number)
 print(number[-4])
+
