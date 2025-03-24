@@ -383,6 +383,19 @@ word=input("Enter a word :")
 for i in range (len(word)-1,-1,-1):
     print(word[i],end="")
     
+# Hat question
+1
+list=[1,2,3,4,5]
+print(list)
+num=int(input("Enter the no:"))
+list[len(list)//2]=num
+print(list)
+
+del list[len(list)-1]
+print(list)
+
+print(len(list))
+
 
 
 

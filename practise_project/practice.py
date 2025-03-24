@@ -5,7 +5,6 @@ comment for
 multi line
 
 '''
-'''
 print("Hello")
 print("Hello")
 print("Hello")
@@ -22,6 +21,20 @@ print("Hello,I Am ",name,". i am a ",Profeion," profeionaly. And i have around "
 var=0
 print(not(var<=0))
 
+'''
+# LIST 
+number= [10,5,7,2,1]
+number[0]=111
+print (number[0])
+print (number[1])
+print (number[2])
+print (number[3])
+print (number[4])
+del number[1]
+print(len(number))
+print(number)
+print(number[-4])
+
 
 #LIST
 number=[1,2,3,4,5]
@@ -30,7 +43,7 @@ number[len(number)//2]=var
 print(number)
 del number[len(number)-1]
 print(number)
-'''
+
 #FUNCTION
 list=[1,2,3,4,5]
 print("CUrrent list", list)
@@ -64,5 +77,28 @@ for count in range(len(my_list)):
     sum += my_list[count]
     print(sum)
 
+#practice Question
+numbers= [111,7,2,1]
+print(len(numbers))
+print (numbers)
+numbers.append(4)
+print(len(numbers))
+print (numbers)
+numbers.insert(0,222)
+print(len(numbers))
+print (numbers)
+'''
+'''
+list=[1,2,3,4,5,6,7,8,9]
 
+print(list[0])
+
+
+for i in range (len(list)):
+    print(list[i])
+'''
+list=[]
+for i in range(10):
+    list.append(i+1)
+print(list)
 
