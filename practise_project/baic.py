@@ -55,10 +55,10 @@ cal= ((float(a)**2) + (float(b)**2))**0.5
 print("hypotenuse of two sides is:", cal)
 """
 # comparison Operator
-var=0
+'''var=0
 print(var==0)
 var=1
-print(var==0)
+print(var==0)'''
 
 # Control flow statement
 '''
@@ -203,17 +203,97 @@ i = 1
 j = not not i
 print(i, j)
 '''
+'''
+#list
+numbers=[10,5,7,2,1]
+print("list content", numbers)
+print("list content", numbers[0])
+print("list content", numbers[1])
+print("list content", numbers[2])
+print("list content", numbers[3])
+print("list content", numbers[4])
 
-# LIST 
-number= [10,5,7,2,1]
-number[0]=111
-print (number[0])
-print (number[1])
-print (number[2])
-print (number[3])
-print (number[4])
-del number[1]
-print(len(number))
-print(number)
-print(number[-4])
+count=0
+print("list content", numbers[count])
+count+=1
+print("list content", numbers[count])
+count+=1
+print("list content", numbers[count])
+count+=1
+print("list content", numbers[count])
+numbers[0]=111
+print(numbers)
+numbers[1]=numbers[4]
+print(numbers)
+del numbers[2]
+print(numbers)
+del numbers
+print(numbers)'''
+#
+'''list=[1,2,3,4,5]
+num=int(input("Enter the no:"))
+list[len(list)//2]= num
+print(list)
+    
+print(len(list))
+del list [len(list)-1]
+print(list)'''
 
+'''list=[10,1,8,3,5]
+for count in range (len(list)):
+    print("list[",count,"]=>",list[count])
+
+for element in list:
+    print("element =>",element)
+
+var1=1
+var2=2
+
+print("var1 :",var1)
+print("var2 :",var2)
+
+auxillary=var1
+var1=var2
+var2=auxillary
+print("var1 :",var1)
+print("var2 :",var2)
+
+var1,var2=var2,var1
+print("var1 :",var1)
+print("var2 :",var2)
+
+mylist=[10,1,8,3,5]
+print(mylist)
+mylist[0],mylist[4]=mylist[4],mylist[0]
+mylist[1],mylist[3]=mylist[3],mylist[1]
+print(mylist)
+
+'''
+#beatles
+beatles=[]
+print(beatles)
+beatles.append('John Lannon')
+beatles.append('Paul McCartney')
+beatles.append('George Harrison')
+print(beatles)
+
+for i in range(1):
+    beatles.append('Stu Sutcliffe')
+    beatles.append('Pete Best')
+print(beatles)
+del beatles[3]
+print(beatles)
+del beatles[3]
+print(beatles)
+beatles.insert(0, 'Ringo Starr' )
+print(beatles)
+
+#GUESS OP
+lst = [1, 2, 3, 4, 5]
+lst_2 = []
+add = 0
+for number in lst:
+    add += number
+    lst_2.append(add)
+print(lst_2)
+print(lst)
