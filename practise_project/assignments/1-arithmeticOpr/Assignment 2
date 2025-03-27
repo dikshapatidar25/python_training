@@ -383,7 +383,7 @@ word=input("Enter a word :")
 for i in range (len(word)-1,-1,-1):
     print(word[i],end="")
     
-# Hat question
+# Hat Question
 1
 list=[1,2,3,4,5]
 print(list)

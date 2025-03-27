@@ -270,7 +270,7 @@ print(mylist)
 
 '''
 #beatles
-beatles=[]
+'''beatles=[]
 print(beatles)
 beatles.append('John Lannon')
 beatles.append('Paul McCartney')
@@ -297,3 +297,18 @@ for number in lst:
     lst_2.append(add)
 print(lst_2)
 print(lst)
+
+lst = []
+del lst
+print(lst)'''
+
+#BUBBLE ALGORITHM
+lst=[9,1,3,4,7,8,6,5,2]
+i=0
+for count in range(len(lst)-1):
+    for count1 in range(len(lst)-1-count):
+        if lst[count1] > lst[count1+1]:
+            lst[count1],lst[count1+1]=lst[count1+1],lst[count1]
+        i +=1
+print(lst) 
+print("loop range for :",i,"times")          
