@@ -302,8 +302,8 @@ lst = []
 del lst
 print(lst)'''
 
-#BUBBLE ALGORITHM
-lst=[9,1,3,4,7,8,6,5,2]
+#BUBBLE SORT ALGORITHM
+'''lst=[9,1,3,4,7,8,6,5,2]
 i=0
 for count in range(len(lst)-1):
     for count1 in range(len(lst)-1-count):
@@ -311,4 +311,59 @@ for count in range(len(lst)-1):
             lst[count1],lst[count1+1]=lst[count1+1],lst[count1]
         i +=1
 print(lst) 
-print("loop range for :",i,"times")          
+print("loop range for :",i,"times")  
+
+my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)
+
+
+
+lst = [5, 3, 1, 2, 4]
+print(lst)
+lst.reverse()
+print(lst)
+
+lst = ["D", "F", "A", "Z"]
+lst.sort()
+print(lst)
+
+a = 3
+b = 1
+c = 2
+lst = [a, c, b]
+lst.sort()
+print(lst)'''
+
+#Reverse a list
+#list=[1,2,3,4,5,6,7,8,9,10]
+list=[1,2,3,4,5,6,7,8,9]
+
+'''if len(list)//2 %2==0:
+    t= len(list)/2
+else:
+    t= len(list)//2-1
+print("Debugging:type(t):",type(t)) 
+t=int(t)
+print("Debugging:type(t):",type(t))
+for index in range(t):
+    list[index],list[-(index+1)]=  list[-(index+1)],list[index]
+print("list after reverse =",list)
+'''
+print(list)
+list.reverse()
+print(list)
+
+list1=[1]
+list2=list1
+list1[0]=2
+print(list2)
+
+list1=[1]
+list2=list1[:]
+list1[0]=2
+print(list2)
+
+list=[1,2,4,7,8]
+newlist= list[1:3]
+print(newlist)

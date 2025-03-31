@@ -103,7 +103,7 @@ for i in range (len(list)):
  #   list.append(i+1)
 #print(list)
 
- '''write a program to calculate the sum of the elemnet
+'''write a program to calculate the sum of the elemnet
 my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 sum=0
 for count in range(len(my_list)):
@@ -119,6 +119,11 @@ for count in my_list:
 print(sum)'''
 
 
-list={10,1,8,3,5}
+'''list={10,1,8,3,5}
 for count in range (len(list)):
- print("List[",count,"]=>",list[count])
+    print("List[",count,"]=>",list[count])
+'''
+list=[8,10,6,2,4]
+list.sort()
+print(list)
+
