@@ -367,3 +367,57 @@ print(list2)
 list=[1,2,4,7,8]
 newlist= list[1:3]
 print(newlist)
+
+#Maximum 
+mylist=[17,3,11,5,1,9,7,15,13]
+max=-1
+for element in mylist:
+    if max< element:
+        max=element
+        print(max)
+
+#To find 5
+mylist=[17,3,11,5,1,9,7,15,13]
+found=0
+for i in range(len(mylist)):
+    if mylist[i]==5:
+        print("Found 5 at index :",i)
+        found=1
+        break
+if found==0:
+    print("sorry, 5 is not found!")
+
+lottery=[3,7,11,42,34,49]
+drawn =[5,11,9,42,3,49]
+hit=0
+count=0
+'''for i in range(len(lottery)):
+    for j in range(len(drawn)):
+        if lottery[i]==drawn[j]:
+            hit+=1
+        count+=1
+print(hit)
+print(count)'''
+
+
+for element in lottery:
+    if element in drawn:
+        hit+=1
+print(hit)
+print(count)
+
+mylist=[1,2,4,4,1,4,2,6,2,9]
+
+deleted=[]
+for index in range(len(mylist)-1):
+    for index1 in range(index+1,len(mylist)):
+        if index1 not in deleted:
+            if mylist[index]==mylist[index1]:
+                deleted.append(index1)
+print(mylist)
+print(deleted)
+deleted.sort()
+print(deleted)
+for index in range(len(deleted)):
+    del mylist[deleted[len(deleted)-(index+1)]]
+print(mylist)
