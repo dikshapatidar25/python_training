@@ -389,9 +389,13 @@ print(len(list)) '''
 
 
 #LIST ASSIGNMENT QUESTION
-# Write a Python program to sum all the items in a list
+# Write a Python program to sum all the items in a list using loop
 list=[1,2,3,4,5]
-print( "SUM OF THE LIST :",sum(list))
+sum=0
+for element in list:
+    sum+=element
+print("sum of the list:",sum)
+
 
 #Write a Python program to multiply all the items in a list
 list=[1,2,3,4,5]
@@ -402,11 +406,13 @@ print("MULTIPLICATION OF THE LIST :",mul)
 
 # Write a Python program to get the largest number from a list
 list=[11,27,32,45,5]
-for i in list:
-    if i==max(list):
-        print("LARGEST NUMBER IN THE LIST :",max(list))
+max=0
+for element in list:
+        if element>max:
+            max=element
+print("LARGEST NUMBER IN THE LIST :",max)
 
-
+        
 #Write a Python program to get the smallest number from a list
 list=[11,27,32,45,5]
 for i in list:
@@ -433,6 +439,29 @@ n=4
 for i in words:
     if len(i)>n:
         print(i)
+
+#Write a Python program to remove duplicates from a list.
+list=[1,2,2,3,4,4,5,6,6]
+list2=[]                                
+for element in list:
+    if element  not in list2:
+        list2.append(element )
+print(list2)
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+
+
 
 
 

@@ -406,6 +406,7 @@ for element in lottery:
 print(hit)
 print(count)
 
+#Remove dublicate 
 mylist=[1,2,4,4,1,4,2,6,2,9]
 
 deleted=[]
@@ -421,3 +422,4 @@ print(deleted)
 for index in range(len(deleted)):
     del mylist[deleted[len(deleted)-(index+1)]]
 print(mylist)
+
