@@ -350,7 +350,7 @@ for index in range(t):
     list[index],list[-(index+1)]=  list[-(index+1)],list[index]
 print("list after reverse =",list)
 '''
-print(list)
+'''print(list)
 list.reverse()
 print(list)
 
@@ -391,13 +391,13 @@ lottery=[3,7,11,42,34,49]
 drawn =[5,11,9,42,3,49]
 hit=0
 count=0
-'''for i in range(len(lottery)):
+for i in range(len(lottery)):
     for j in range(len(drawn)):
         if lottery[i]==drawn[j]:
             hit+=1
         count+=1
 print(hit)
-print(count)'''
+print(count)
 
 
 for element in lottery:
@@ -421,5 +421,44 @@ deleted.sort()
 print(deleted)
 for index in range(len(deleted)):
     del mylist[deleted[len(deleted)-(index+1)]]
-print(mylist)
+print(mylist)'''
+
+#remove dublicate using loop
+'''my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+my_list1 = []
+for element in my_list:
+    if element not in my_list1:
+        my_list1.append(element)
+print(my_list1)'''
+
+
+squares = [x ** 2 for x in range(10)]
+print(squares)
+
+twos = [2 ** i for i in range(8)]
+print(twos)
+
+odds = [x for x in squares if x % 2 != 0 ]
+print(odds)
+
+
+temps=[[0.0 for h in range(24)] for d in range(31)]
+print(temps)
+
+total=0.0
+for day in temps:
+    total+=day[11]
+    average=total/31
+    print("Average Temperature at nonn:",average)
+
+highest=-100
+for day in temps:
+    for temps in day:
+        if temps > highest:
+            highest=temps
+print("The hifghest Temperature was :",highest)
+
+rooms=[[False for r in range(20)]for f in range(15) for t in range(3)]
+print(rooms)
+
 
