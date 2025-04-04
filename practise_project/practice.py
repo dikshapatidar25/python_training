@@ -123,19 +123,23 @@ print(sum)'''
 for count in range (len(list)):
     print("List[",count,"]=>",list[count])
 '''
-list=[8,10,6,2,4]
+'''list=[8,10,6,2,4]
 list.sort()
-print(list)
+print(list)'''
 
 #Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same. Sample List : ['abc', 'xyz', 'aba', '1221'] Expected Result : 2
 words=["abc","xyz","aba","1221"]
 count=0
-for i in words:
-    if len(i)>1 and i[0]==i[-1]:
-        count+=1
+for word in words:
+    if  word[0] == word[-1]:
+       count += 1
 print(count)
+  
+       
 
-#Write a Python function that takes two lists and returns True if they have at least one common member.using loop
+
+
+'''#Write a Python function that takes two lists and returns True if they have at least one common member.using loop
 def common_member(list1, list2):
     for i in list1:
         for j in list2:
@@ -155,4 +159,4 @@ list_2 = list_1
 list_3 = list_2
 del list_1[0]
 del list_2
-print(list_3)
+print(list_3)'''

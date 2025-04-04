@@ -448,6 +448,17 @@ for element in list:
         list2.append(element )
 print(list2)
 
+#Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same. Sample List : ['abc', 'xyz', 'aba', '1221'] Expected Result : 2
+words=["abc","xyz","aba","1221"]
+count=0
+for word in words:
+    if  word[0] == word[-1]:
+       count += 1
+print(count)
+  
+       
+
+
 
 
         
