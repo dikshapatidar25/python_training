@@ -46,7 +46,7 @@ print(number)
 del number[len(number)-1]
 print(number)
 
-#FUNCTION
+
 list=[1,2,3,4,5]
 print("CUrrent list", list)
 list.append(6)

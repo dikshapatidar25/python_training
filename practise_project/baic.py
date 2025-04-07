@@ -432,7 +432,7 @@ for element in my_list:
 print(my_list1)'''
 
 
-squares = [x ** 2 for x in range(10)]
+'''squares = [x ** 2 for x in range(10)]
 print(squares)
 
 twos = [2 ** i for i in range(8)]
@@ -461,4 +461,18 @@ print("The hifghest Temperature was :",highest)
 rooms=[[False for r in range(20)]for f in range(15) for t in range(3)]
 print(rooms)
 
+for i in range(1):
+    print("#")
+else:
+    print("#")
+'''
 
+nums=[1,2,3]
+vals =nums[-1:-2]
+print(vals)
+
+list1=[1,2,3]
+list=[]
+for v in list1:
+    list.insert(0,v)
+print(list)
