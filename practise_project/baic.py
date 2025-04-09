@@ -466,7 +466,7 @@ for i in range(1):
 else:
     print("#")
 '''
-
+#Questions
 nums=[1,2,3]
 vals =nums[-1:-2]
 print(vals)
@@ -474,5 +474,12 @@ print(vals)
 list1=[1,2,3]
 list=[]
 for v in list1:
-    list.insert(0,v)
+    list.insert(1,v)
 print(list)
+
+my_list = [[0, 1, 2, 3] for i in range(2)]
+print(my_list[2][0])
+
+vals = [0, 1, 2]
+vals.insert(0, 1)
+del vals[1]
