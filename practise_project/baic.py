@@ -467,7 +467,7 @@ else:
     print("#")
 '''
 #Questions
-nums=[1,2,3]
+'''nums=[1,2,3]
 vals =nums[-1:-2]
 print(vals)
 
@@ -483,3 +483,34 @@ print(my_list[2][0])
 vals = [0, 1, 2]
 vals.insert(0, 1)
 del vals[1]
+'''
+
+#Function
+'''def message():
+    print("Enter the value :")
+print("We start here")
+message()
+print("we end here.")'''
+
+'''print("We start here")
+message()
+print("we end here.")
+def message():
+    print("Enter the value :")
+'''
+
+'''def message():
+    print("Enter the value :")
+
+message()
+a= int(input())
+message()
+b= int(input())
+message()
+c= int(input())
+'''
+def hello (name):
+    print("Hello :",name)
+
+name=input("enter the name:")
+hello(name)
