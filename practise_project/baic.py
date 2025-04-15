@@ -492,6 +492,7 @@ print("We start here")
 message()
 print("we end here.")'''
 
+# Error 
 '''print("We start here")
 message()
 print("we end here.")
@@ -508,9 +509,50 @@ message()
 b= int(input())
 message()
 c= int(input())
-'''
+
 def hello (name):
     print("Hello :",name)
 
 name=input("enter the name:")
-hello(name)
+hello(name) 
+
+# Leap year
+def is_year_leap(year):
+    if year % 4 == 0 and year % 100 != 0:
+           return True
+    elif year % 400 == 0:
+           return True
+    else:
+            return False
+    
+test_data = [1990,2000,2016,1987]
+test_result=[False,True ,True ,False]
+for i in range(len(test_data)):
+    yr = test_data[i]
+    print(yr,"=>",end="")
+    result = is_year_leap(yr)
+    if result == test_result[i]:
+            print("Ok")
+    else:
+            print("failed")
+
+def scopetest():
+    x=123
+scopetest()
+print(x)
+
+
+def myfunction():
+   print("Do I Know that Variable :",var)
+var=1
+myfunction()
+print(var)
+'''
+# Global variable
+def myfunction():
+    global var
+    var=2
+    print("Do I know that Variablle :",var)
+var=1
+myfunction()
+print(var)
