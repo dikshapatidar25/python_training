@@ -547,7 +547,7 @@ def myfunction():
 var=1
 myfunction()
 print(var)
-'''
+
 # Global variable
 def myfunction():
     global var
@@ -556,3 +556,43 @@ def myfunction():
 var=1
 myfunction()
 print(var)
+
+def myfunction(n):
+    print("I got", n)
+    n+=1
+    print("I have",n)
+
+var=1
+myfunction(var)
+print(var)
+
+def  myfunction(mylist1):
+    print("print #1:" ,mylist1)
+    print("print #2:" ,mylist2)
+    mylist1=[0,1]
+    print("print #3:" ,mylist1)
+    print("print #4:" ,mylist2)
+mylist2=[2,3]
+myfunction(mylist2)
+print("print #5:", mylist2)  
+
+def  myfunction(mylist1):
+    print("print #1:" ,mylist1)
+    print("print #2:" ,mylist2)
+    del mylist1[0]
+    print("print #3:" ,mylist1)
+    print("print #4:" ,mylist2)
+mylist2=[2,3]
+myfunction(mylist2)
+print("print #5:", mylist2) 
+'''
+#BMI
+weight=float(input("Enter the Weight in kilograms:"))
+height= float(input("Enter the Height in meters:"))
+def bodymaskindex(weight, height):
+    if height < 1.0 or height >2.5 or \
+        weight < 20 or weight>200:
+        return None
+        bodymaskindex=weight/height**2
+    return bodymaskindex
+print(bodymaskindex(weight,height))
