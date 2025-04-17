@@ -585,7 +585,7 @@ def  myfunction(mylist1):
 mylist2=[2,3]
 myfunction(mylist2)
 print("print #5:", mylist2) 
-'''
+
 #BMI
 weight=float(input("Enter the Weight in kilograms:"))
 height= float(input("Enter the Height in meters:"))
@@ -596,3 +596,105 @@ def bodymaskindex(weight, height):
         bodymaskindex=weight/height**2
     return bodymaskindex
 print(bodymaskindex(weight,height))
+
+# Function practie
+def is_year_leap(year):
+    if year % 4 == 0 and year % 100 != 0:
+           return True
+    elif year % 400 == 0:
+           return True
+    else:
+            return False
+
+
+def days_in_month(year, month):
+        if month == 2:
+              if is_year_leap(year):
+                    return 29
+              else:
+                    return 28
+        elif month in [1, 3, 5, 7, 8,10, 12]:
+            return 31
+        else:   
+             return 30
+print(days_in_month(2020, 2))
+
+ 
+
+test_years = [1900, 2000, 2016, 1987]
+test_months = [2, 2, 1, 11]
+test_results = [28, 29, 31, 30]
+for i in range(len(test_years)):
+     yr = test_years[i]
+mo = test_months[i]
+print(yr, mo, "->", end="")
+result = days_in_month(yr, mo)
+if result == test_results[i]:
+    print("OK")
+else:
+    print("Failed")
+
+def ft_and_inch_to_m(ft, inch):
+    return ft * 0.3048 + inch * 0.0254
+
+print(ft_and_inch_to_m(1, 1))
+
+
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+print(ft_and_inch_to_m(6))
+
+def ft_and_inch_to_m(ft, inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+def lb_to_kg(lb):
+    return lb * 0.4535923
+def bmi(weight, height):
+    if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
+        return None
+    return weight / height ** 2
+print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))
+
+def is_a_triangle(a, b, c):
+    if a + b <= c:
+        return False
+    if b + c <= a:
+        return False
+    if c + a <= b:
+        return False
+    return True
+print(is_a_triangle(1, 1, 1))
+print(is_a_triangle(1, 1, 3))
+
+def is_a_triangle(a, b, c):
+    return a + b > c and b + c > a and c + a > b
+a = float(input('Enter the first side\'s length: '))
+b = float(input('Enter the second side\'s length: '))
+c = float(input('Enter the third side\'s length: '))
+if is_a_triangle(a, b, c):
+    print('Yes, it can be a triangle.')
+else:
+    print('No, it can\'t be a triangle.')
+
+# factorial
+def factorial(n):
+    if n < 0:
+        return None
+    elif n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+factorial(5)
+print("Factorial number is : ", factorial(5))
+'''
+def factorial(n):
+    if n < 0:
+        return None
+    if n < 2:
+        return 1
+    product=1
+    for i in range(2,n+1):
+        product*=i
+    return product
+for n in range(1,6):
+    print( n,factorial(n))

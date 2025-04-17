@@ -542,8 +542,6 @@ else:
 '''
 #Multi-dimenstion List Practice Questions:
 #Write a Python program that takes two digits m (row) and n (column) as input and generates a two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j. uing for Loop
-
-
 i = 0,1.., m-1
 j = 0,1, n-1
 
@@ -621,6 +619,16 @@ for i in list1:
     for j in i:
         sum+=j
 print(sum)
+
+#Write a program that creates a nested list from a user inputted list of strings. The resulting nested list should contain the unique characters from each string.
+#Example input: ['apple', 'banana', 'cherry']
+#Example output: [['a', 'p', 'l', 'e'], ['b', 'a', 'n'], ['c', 'h', 'e', 'r', 'y']]
+list1 = input("Enter the list of strings: ")
+list2=[]
+for i in list1:
+    list2.append(list(set(i)))
+print(list2)
+
 
 
 
