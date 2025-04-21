@@ -698,3 +698,5 @@ def factorial(n):
     return product
 for n in range(1,6):
     print( n,factorial(n))
+
+    
