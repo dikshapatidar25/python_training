@@ -539,7 +539,7 @@ else:
     print("list2 is not a sublist of list1")
 
 
-'''
+# Assignment 6
 #Multi-dimenstion List Practice Questions:
 #Write a Python program that takes two digits m (row) and n (column) as input and generates a two-dimensional array. The element value in the i-th row and j-th column of the array should be i*j. uing for Loop
 i = 0,1.., m-1
@@ -628,9 +628,9 @@ list2=[]
 for i in list1:
     list2.append(list(set(i)))
 print(list2)
-'''
 
-#Assignment 6
+
+#Assignment 7 Function
 #Your task is to write and test a function which takes one argument (a year) and returns True if the year is a leap year, or False otherwise. uing for loop
 def is_year_leap(year):
         if year % 4 == 0 and year % 100 != 0:
@@ -710,8 +710,42 @@ def days_in_month(year, month):
 def day_of_year(year, month, day):
     for m in range(1, month):
         day += days_in_month(year, m)
-        return day  +day
+        return day  
 print(day_of_year(2000, 12, 31))
+
+#Prime numbers ‒ how to find them
+'''A natural number is prime if it is greater than 1 and has no divisors other than 1 and itself.
+Your task is to write a function checking whether a number is prime or not.
+The function:
+is called is_prime;
+takes one argument (the value to check)
+returns True if the argument is a prime number, and False otherwise.
+Hint: try to divide the argument by all subsequent values (starting from 2) and check the remainder ‒ if it's zero, your number cannot be a prime; think carefully about when you should stop the process.
+If you need to know the square root of any value, you can utilize the ** operator. Remember: the square root of x is the same as
+'''
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+for num in range(2, 21):
+    if is_prime(num):
+        print(num, end=' ')
+
+
+
+
+
+
+
+
+    
+    
+
+
 
 
 
