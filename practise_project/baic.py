@@ -699,4 +699,116 @@ def factorial(n):
 for n in range(1,6):
     print( n,factorial(n))
 
-    
+# Tuple
+tuple1=(1,2,3,4,5)
+tuple2=1,2,3,4,5
+print(tuple1)
+print(tuple2)
+print(type(tuple1))
+print(type(tuple2))
+
+#empty tuple
+# tuple=()
+# print(tuple)
+# print(type(tuple))
+
+newtuple=1,
+print(newtuple)
+print(type(newtuple))
+
+
+mytuple=(1,10,100,1000)
+#mytuple.append(10000)
+#del mytuple[0]
+#mytuple[1]=-10
+
+print(len(mytuple))
+
+#add and multiply
+tuple1=(1,2,3,4,5)
+tuple2=(5,6,7,8,9)
+tuple3=tuple1+tuple2
+print(tuple3)
+tuple4=tuple3*2
+print(tuple4)
+for element in tuple1:
+    print(element)
+
+mylist=[1,2,3]
+print(mylist)
+print(type(mylist))
+tup=tuple(mylist)
+print(tup)
+print(type(tup))
+
+#swapping +var add
+var=123
+t1=1,
+t2=2,
+t3=3,var
+t1,t2,t3=t2,t3,t1
+print(t1)
+print(t2)
+print(t3)
+
+
+#DICTIONARY
+dictonary={"cat":"chat","dog": "chien","horse": "chevel"}
+phoneno={"boss":456876,"suzy":146869}
+emptydictonary={}
+print(dictonary)
+print(phoneno)
+print(emptydictonary)
+print(type(dictonary))
+print(type(phoneno))
+print(type(emptydictonary))
+print(dictonary["cat"])
+print(phoneno["suzy"])
+
+words=["cat","lion","horse"]
+for word in words:
+    if word in dictonary:
+        print(word, "->",dictonary[word])
+    else:
+        print(word ,"is not in dictonary")
+
+dictonary={
+    "cat": "chat",
+    "dog": "chien", 
+    "horse": "cheval"
+}
+print(dictonary)
+
+#key method
+for key in dictonary.keys():
+    print(key, "->", dictonary[key])
+
+#item method
+for key, value in dictonary.items():
+    print(key, "->", value)
+
+#value method
+for value in dictonary.values():
+    print(value)
+#copy method
+copydictionary=dictonary.copy()
+print(copydictionary)
+
+dictonary["cat"]="nochat"
+item=dictonary["cat"]
+print(item)
+
+# key ADD
+dictonary["adam"]= 436567
+print(dictonary)
+
+# delete
+del dictonary["adam"]
+print(dictonary)
+
+#popitem
+dictonary.popitem()
+print(dictonary)
+#Remove element
+dictonary.clear()
+print(dictonary)
