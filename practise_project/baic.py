@@ -686,7 +686,7 @@ def factorial(n):
 
 factorial(5)
 print("Factorial number is : ", factorial(5))
-'''
+''''''
 def factorial(n):
     if n < 0:
         return None
@@ -794,6 +794,7 @@ for value in dictonary.values():
 copydictionary=dictonary.copy()
 print(copydictionary)
 
+#update
 dictonary["cat"]="nochat"
 item=dictonary["cat"]
 print(item)
@@ -811,4 +812,53 @@ dictonary.popitem()
 print(dictonary)
 #Remove element
 dictonary.clear()
+
+dictonary.update({"duck":"swan"})
 print(dictonary)
+
+schoolclass={}
+while True:
+    name=input("Enter the student name :")
+    if name == "":
+        break
+    score=int(input("Enter the student Score(0-10) :"))
+    if score not in range(0,10):
+        break
+    if name in schoolclass:
+        schoolclass[name] += (score,)
+    else:
+         schoolclass[name] = (score,)
+for name in sorted(schoolclass.keys()):
+    adding=0
+    counter=0
+    for score in schoolclass[name]:
+        adding+=score
+        counter+=1
+    print(name,":",adding/counter)
+    mytup'''
+tup=(1,2,3)
+print(tup[2])
+tup=1,2,3
+
+a,b,c=tup
+print(a*b*c)
+
+# count method
+tup=1,2,34,5,6,7,5,2,8,9,5,3,2,2
+duplicates=tup.count(2)
+print(duplicates)
+
+d1={"adam smith": 'a','judy paxton': 'b+'}
+d2= {'marrie louis':'a','patrick white':'c'}
+d3={}
+for item in (d1,d2):
+    d3.update(item)
+print(d3)
+
+mylist=["car",'ford','flower','tulip']
+t=tuple(mylist)
+print(t)
+
+colors=(('green','#089564'),('blue', '#54677'))
+colorsdictionary= dict(colors)
+print(colorsdictionary)
