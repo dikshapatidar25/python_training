@@ -836,6 +836,7 @@ for name in sorted(schoolclass.keys()):
         counter+=1
     print(name,":",adding/counter)
     mytup'''
+# QUIZ
 tup=(1,2,3)
 print(tup[2])
 tup=1,2,3
@@ -854,11 +855,39 @@ d3={}
 for item in (d1,d2):
     d3.update(item)
 print(d3)
-
+#tuple convert
 mylist=["car",'ford','flower','tulip']
 t=tuple(mylist)
 print(t)
 
+#dictionary convert
 colors=(('green','#089564'),('blue', '#54677'))
 colorsdictionary= dict(colors)
 print(colorsdictionary)
+
+# Eception handling
+'''try:
+    value=int(input("Enter the natural number :"))
+    print("The reciprocal of",value,"is",1/value)
+except:
+    print("sorry, my program is not working")
+try:
+    value=int(input("Enter the natural number :"))
+    try: 
+        print("The reciprocal of",value,"is",1/value)
+    except:
+        print("pleae enter anything other than zero")
+except:
+    print("p;eae enter omething!, Blanki not acceptable")
+'''
+
+
+try:
+    value=int(input("Enter the natural number :"))
+    print("The reciprocal of",value,"is",1/value)
+except ValueError:
+    print("Value error id not appropriate")
+except ZeroDivisionError:
+    print("Zero cannot be accepted an input")
+except:
+    print("orry for inconvience my code i failed")
