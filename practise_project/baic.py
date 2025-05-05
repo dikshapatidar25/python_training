@@ -879,7 +879,7 @@ try:
         print("pleae enter anything other than zero")
 except:
     print("p;eae enter omething!, Blanki not acceptable")
-'''
+
 
 
 try:
@@ -890,4 +890,24 @@ except ValueError:
 except ZeroDivisionError:
     print("Zero cannot be accepted an input")
 except:
-    print("orry for inconvience my code i failed")
+    print("sorry for inconvience my code i failed")
+'''
+    #Module
+import math 
+print(math.exp(3))
+
+print(math.sin(1))
+
+from math import sin, pi
+print(sin(pi / 2))
+pi = 3.14
+def sin(x):
+    if 2 * x == pi:
+        return 0.99999999
+    else:
+        return None
+print(sin(pi / 2))
+
+from math import sin , pi,exp
+print(sin(pi / 2))
+print(exp(3))

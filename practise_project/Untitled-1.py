@@ -27,21 +27,61 @@ print("power of a and b is :",a**b)
 '''
 import random
 
-def play():
-    number = random.randint(1, 100)
-    tries = 7
-    print("Guess a number between 1 and 100. You have 7 tries.")
+def get_max_attempts(difficulty):
+    if difficulty == 'easy':
+        return 10
+    elif difficulty == 'medium':
+        return 7
+    elif difficulty == 'hard':
+        return 5
+    else:
+        print("Invalid difficulty.")
+        return 7
 
-    for i in range(tries):
-        guess = int(input("Your guess: "))
-        if guess < number:
-            print("Too low!")
-        elif guess > number:
-            print("Too high!")
+def get_valid_guess():
+    while True:
+        try:
+            guess = int(input("Enter your guess (1-100): "))
+            if 1 <= guess <= 100:
+                return guess
+            else:
+                print("Please enter a number between 1 and 100.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+def play_game():
+    print("\n🎮 Welcome to the Number Guessing Game!")
+    print("Guess the number between 1 and 100.\n")
+
+    difficulty = input("Choose difficulty (Easy/Medium/Hard): ").lower()
+    max_attempts = get_max_attempts(difficulty)
+    
+    secret_number = random.randint(1, 100)
+    attempts = 0
+
+    print(f"\nYou have {max_attempts} attempts to guess the number.\n")
+
+    while attempts < max_attempts:
+        guess = get_valid_guess()
+        attempts += 1
+
+        if guess < secret_number:
+            print("Too low!\n")
+        elif guess > secret_number:
+            print("Too high!\n")
         else:
-            print("You got it!")
+            print(f"🎉 Correct! You guessed the number in {attempts} tries.")
             break
     else:
-        print(f"Sorry! The number was {number}")
+        print(f"❌ Out of attempts! The number was {secret_number}.\n")
 
-play()
+def main():
+    while True:
+        play_game()
+        again = input("Do you want to play again? (y/n): ").lower()
+        if again != 'y':
+            print("Thanks for playing! Goodbye! 👋")
+            break
+
+if __name__ == "__main__":
+    main()
