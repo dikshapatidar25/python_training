@@ -911,3 +911,45 @@ print(sin(pi / 2))
 from math import sin , pi,exp
 print(sin(pi / 2))
 print(exp(3))
+
+# string
+word="Hello"
+word=""
+word=" "
+word="I\"M"
+#word='''acbdsjfhdjg
+#hkmjh58'''
+word="Diksha\npatidar"
+print(len(word))
+
+
+str1="one"
+str2="two"
+print(str1+str2)
+print(3*str2)
+
+#ordinary function
+print(ord("a"))
+#print(ord(""))
+print(ord(" "))
+
+print(chr(97))
+print(chr(98))
+print(chr(ord("a")))
+
+#INDEXING
+word ="my name is Diksha"
+print(word[9])
+for index in range(len(word)):
+    if word[index]=="a"or \
+        word[index]=="e"or \
+        word[index]=="i"or \
+        word[index]=="o"or \
+        word[index]=="u":
+        print("1",end="")
+    else:
+        print(word[index],end="")
+print(word)    
+
+for char in word:
+    print("char",char)
