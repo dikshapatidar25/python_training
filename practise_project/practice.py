@@ -125,7 +125,7 @@ for count in range (len(list)):
 '''
 '''list=[8,10,6,2,4]
 list.sort()
-print(list)'''
+print(list)
 
 #Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same. Sample List : ['abc', 'xyz', 'aba', '1221'] Expected Result : 2
 words=["abc","xyz","aba","1221"]
@@ -139,7 +139,7 @@ print(count)
 
 
 
-'''#Write a Python function that takes two lists and returns True if they have at least one common member.using loop
+#Write a Python function that takes two lists and returns True if they have at least one common member.using loop
 def common_member(list1, list2):
     for i in list1:
         for j in list2:
@@ -161,3 +161,106 @@ del list_1[0]
 del list_2
 print(list_3)'''
 
+num_patterns = [
+     """
+###
+# #
+# #
+# #
+###""",
+ """
+  #
+  #
+  #
+  #
+  #""",
+ """
+###
+  #
+###
+#  
+###""",
+     """
+###
+  #
+###
+  #
+###""",
+"""
+# #
+# #
+###
+  #
+  #""",
+    """
+###
+#  
+###
+  #
+###""",
+   """
+###
+#  
+###
+# #
+###""",
+"""
+###
+  #
+  #
+  #
+  #""",
+"""
+###
+# #
+###
+# #
+###""",
+    """
+###
+# #
+###
+  #
+###"""
+    ]
+
+# Eception
+def badfun(n):
+    if n==0:
+        raise ZeroDivisionError
+    else:
+        return 1/n
+try:
+    badfun(0)
+except ArithmeticError:
+    print("ArithmeticError")
+  
+print("THE END")
+'''
+from time import sleep
+second =0
+while True:
+    try:
+        print(second)
+        second+=1
+        sleep(1)
+    except KeyboardInterrupt:
+        print("dont do that")
+'''
+from math import exp
+ex=1
+try:
+    while True:
+      print(exp(ex))
+      ex +=2
+except OverflowError:
+    print("the no is too big")
+
+dictionary={"a": "b","b":"c","c":"d"}
+ch='a'
+try:
+    while True:
+        ch=dictionary[ch]
+        print(ch)
+except KeyError:
+    print("no such key")

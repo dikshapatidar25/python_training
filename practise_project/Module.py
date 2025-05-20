@@ -64,7 +64,7 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(choice(my_list))
 print(sample(my_list, 5))
 print(sample(my_list, 10))
-'''
+
 #platform
 from platform import machine
 print(machine())
@@ -78,4 +78,4 @@ print(version())
 from platform import python_implementation, python_version_tuple
 print(python_implementation())
 for atr in python_version_tuple():
- print(atr)
+ print(atr)'''

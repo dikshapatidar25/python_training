@@ -1,4 +1,4 @@
-"""
+''''''"""
 print("Hello")
 print("H")
 print("e")
@@ -835,7 +835,7 @@ for name in sorted(schoolclass.keys()):
         adding+=score
         counter+=1
     print(name,":",adding/counter)
-    mytup'''
+    mytup
 # QUIZ
 tup=(1,2,3)
 print(tup[2])
@@ -866,7 +866,7 @@ colorsdictionary= dict(colors)
 print(colorsdictionary)
 
 # Eception handling
-'''try:
+try:
     value=int(input("Enter the natural number :"))
     print("The reciprocal of",value,"is",1/value)
 except:
@@ -891,7 +891,7 @@ except ZeroDivisionError:
     print("Zero cannot be accepted an input")
 except:
     print("sorry for inconvience my code i failed")
-'''
+
 #Module
 import math 
 print(math.exp(3))
@@ -917,8 +917,8 @@ word="Hello"
 word=""
 word=" "
 word="I\"M"
-#word='''acbdsjfhdjg
-#hkmjh58'''
+word=acbdsjfhdjg
+hkmjh58
 word="Diksha\npatidar"
 print(len(word))
 
@@ -953,3 +953,118 @@ print(word)
 
 for char in word:
     print("char",char)
+
+#slice
+
+alpha= "abcgcfgaj"
+print(alpha[1:3])
+print(alpha[3:])
+print(alpha[3:-2])
+print(alpha[-3:4])
+print(alpha[::2])
+print(alpha[1::2])
+
+print("f" in alpha)
+print("f"  not in alpha)
+print("fab" in alpha)
+
+# string not incliude the append, insert, delete ,
+
+#replace with space character
+alpha="abcdefghijklmnopqrstuvwxyz"
+alpha=alpha[:12]+" "+alpha[13:]
+print(alpha)
+result=""
+for element in alpha:
+    if element=="m ":
+        result+=""
+    else:
+        result+=element
+print(result)
+
+print(result.index("y"))
+print(result)
+#convert string into list
+alpha="abcdefghijklmnopqrstuvwxyz"
+
+print(list(alpha))
+
+for ch in "abc":
+    print(chr(ord(ch)+1),end="")
+
+def mySplit(str):
+    result = []
+    tempResult = ""
+    for index in range(len(str)):
+        if str[index] == " ":
+            result.append(tempResult)
+            tempResult = ""
+        elif index == len(str)-1:
+            result.append(tempResult+str[len(str)-1])
+            tempResult = ""
+        else:
+            tempResult += str[index]
+    return result
+'''
+# min and max function
+print(min("aAbByYzZ"))
+
+t = 'The Knights Who Say "Ni!"'
+print('[' + min(t) + ']')
+
+t = [0, 1, 2]
+print(min(t))
+
+print(max("aAbByYzZ"))
+
+t = 'The Knights Who Say "Ni!"'
+print('[' + max(t) + ']')
+
+t = [0, 1, 2]
+print(max(t))
+
+#index() method
+print("aAbByYzZaA".index("b"))
+print("aAbByYzZaA".index("Z"))
+print("aAbByYzZaA".index("A"))
+
+#list() function
+print(list("abcabc"))
+
+#count() method
+print("abcabc".count("b"))
+print('abcabc'.count("d"))
+
+#capitalize() method
+print("Alpha".capitalize())
+print('ALPHA'.capitalize())
+print(' Alpha'.capitalize())
+print('123'.capitalize())
+print("αβγδ".capitalize())
+
+#center() method
+print('[' + 'alpha'.center(10) + ']')
+print('[' + 'Beta'.center(2) + ']')
+print('[' + 'Beta'.center(4) + ']')
+print('[' + 'Beta'.center(6) + ']')
+
+#center() method
+print('[' + 'gamma'.center(20, '*') + ']')
+#endswith() method
+t = "zeta"
+print(t.endswith("a"))
+print(t.endswith("A"))
+print(t.endswith("et"))
+print(t.endswith("eta"))
+
+#find() method
+t = 'theta'
+print(t.find('eta'))
+print(t.find('et'))
+print(t.find('the'))
+print(t.find('ha'))
+
+fnd = the_text.find('the')
+while fnd != -1:
+    print(fnd)
+fnd = the_text.find('the', fnd + 1)
