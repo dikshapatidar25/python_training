@@ -223,7 +223,7 @@ num_patterns = [
   #
 ###"""
     ]
-
+'''
 # Eception
 def badfun(n):
     if n==0:
@@ -236,7 +236,7 @@ except ArithmeticError:
     print("ArithmeticError")
   
 print("THE END")
-'''
+
 from time import sleep
 second =0
 while True:
@@ -246,7 +246,7 @@ while True:
         sleep(1)
     except KeyboardInterrupt:
         print("dont do that")
-'''
+
 from math import exp
 ex=1
 try:
@@ -264,3 +264,66 @@ try:
         print(ch)
 except KeyError:
     print("no such key")
+
+
+#oop concept
+class Myclass:
+    pass
+
+myclassobject=Myclass()
+print(myclassobject)
+print(type(myclassobject))
+
+tack=[]
+def push(val):
+    tack.append(val)
+    print(tack)
+def pop():
+    val=tack[-1]
+    del tack[-1]
+    return val
+push(3)
+push(2)
+push(1)
+print(pop())
+print(tack)
+print(pop())
+print(tack)
+print(pop())
+print(tack)
+
+#constructor
+class Myclass:
+    def __init__(self): #constructor predefined init
+        print("constructor running")
+        self.__Myclass=[] #__ encapulation
+Myclassobject= Myclass()
+print(Myclassobject.Myclass) #output:constructor running []
+print(len(Myclassobject.Myclass))
+print(type(Myclassobject.Myclass))
+'''
+
+
+stack=[]
+class Stack: 
+    def __init_(self):
+        print("Constructor running!")
+        self.__stack = []
+
+def push(self, val):
+    self.__stack.append(val)
+
+    print(self.__stack)
+
+def pop(self):
+    val = self.__stack[-1]
+    del self.__stack[-1]
+    return val
+
+def travers(self):
+
+    print(self._stack)
+
+stack_object = Stack()
+print(stack_object)
+stack_object.push(1)
